@@ -130,8 +130,3 @@ class Gamer(Estudiante.Estudiante):
         datos_g = (self.ID, self.Nickname_1, self.Nickname_2, self.Accion, self.Horas_acc, self.Aventura, self.Horas_av, self.Arcade, self.Horas_arc, self.Deportivo, self.Horas_dep, self.Estrategia, self.Horas_est, self.Simulacion, self.Horas_sim, self.RPG, self.Horas_rpg)
         return datos_g
 
-    def ingresar_gamer(self, con, d_gamer):
-        cursor_obj = con.cursor()
-        cursor_obj.execute('''INSERT INTO Gamers VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,?)''', d_gamer)
-        con.commit()
-        return True
