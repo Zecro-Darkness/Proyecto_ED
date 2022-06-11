@@ -5,7 +5,6 @@ import GAMER as gamer_c
 import ESTUDIANTE as estudiante_c
 import SERIES as estudiante_s
 import time
-
 # Crea la conexíon a la base de datos en caso de fallar imprimirá 'error'
 
 
@@ -762,5 +761,3 @@ def main():
     con = conexion_a_la_db()
     menu(con)
     cerrar_bd(con)
-
-main()
